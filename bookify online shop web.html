@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shoppify - Online Book Store</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f2f4ff;
+        }
+        /* NAVIGATION BAR */
+        nav {
+            background: #4e54c8;
+            padding: 15px;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav h1 {
+            margin: 0;
+            font-size: 24px;
+            letter-spacing: 1px;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+        nav ul li {
+            color: white;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+        nav ul li:hover {
+            color: #ffeb3b;
+        }
+
+        /* PRODUCT SECTION */
+        .container {
+            padding: 30px;
+            text-align: center;
+        }
+        .products {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        .card {
+            width: 250px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            padding: 15px;
+            text-align: center;
+        }
+        .card img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .card h3 {
+            margin: 10px 0 5px 0;
+        }
+        .card button {
+            background: #4e54c8;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin-top: 10px;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+        .card button:hover {
+            background: #6a70ef;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAV BAR -->
+    <nav>
+        <h1>Shoppify</h1>
+        <ul>
+            <li>Home</li>
+            <li>Books</li>
+            <li>Categories</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+
+    <!-- PRODUCT SECTION -->
+    <div class="container">
+        <h2>Featured Books</h2>
+        <p>Explore our most popular books!</p>
+
+        <div class="products">
+
+            <!-- Book 1 -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f" alt="Book">
+                <h3>The Silent Library</h3>
+                <p>$12.99</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <!-- Book 2 -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794" alt="Book">
+                <h3>Adventure Beyond</h3>
+                <p>$15.49</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <!-- Book 3 -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1528209395271-7f03c0ece7c9" alt="Book">
+                <h3>Mystery of Time</h3>
+                <p>$10.75</p>
+                <button>Add to Cart</button>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
